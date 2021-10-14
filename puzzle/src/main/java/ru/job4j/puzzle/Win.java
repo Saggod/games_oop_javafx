@@ -5,7 +5,7 @@ public class Win {
         boolean rsl = false;
         for (int row = 0; row < board.length; row++) {
             for (int cell = 0; cell < board[row].length; cell++) {
-                if (monoHorizontal(board, row) || monoVertical(board, cell)) {
+                if (board[row][row] == 1 && (monoHorizontal(board, row) || monoVertical(board, cell))) {
                     rsl = true;
                     break;
                 }
@@ -36,5 +36,6 @@ public class Win {
         }
         return result;
     }
+
 
 }
