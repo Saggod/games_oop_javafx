@@ -1,6 +1,7 @@
 package ru.job4j.puzzle;
 
 public class Win {
+
     public static boolean check(int[][] board) {
         boolean rsl = false;
         for (int row = 0; row < board.length; row++) {
@@ -11,7 +12,6 @@ public class Win {
                 }
             }
         }
-
         return rsl;
     }
 
@@ -36,6 +36,5 @@ public class Win {
         }
         return result;
     }
-
 
 }
